@@ -2,11 +2,12 @@
 Use the selectors below to create the following:
 
 - #box is 200 pixels square size, black with 0.1 opacity
-- above 400px window width the box is 220px with 0.2 opacity
-- above 500px window width the box is 220px with 0.4 opacity
-- above 600px window width the box is 220px with 0.6 opacity
-- above 700px window width the box is 220px with 0.1 opacity
-- above 800px window width the box is 220px with 1 opacity
+- above 400px window width the box is 230px with 0.2 opacity
+- above 500px window width the box is 260px with 0.4 opacity
+- above 600px window width the box is 290px with 0.6 opacity
+- above 700px window width the box is 320px with 0.1 opacity
+- above 800px window width the box is 350px with 1 opacity
+- the transitions between individual media queries are animated
 
 Reference: 
 https: //developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
@@ -35,8 +36,8 @@ body {
 
 @media (min-width: 400px) {
     #box {
-        width: 220px;
-        height: 220px;
+        width: 230px;
+        height: 230px;
         background-color: rgba(0, 0, 0, 0.2);
     }
 }
@@ -51,24 +52,24 @@ body {
 
 @media (min-width: 600px) {
     #box {
-        width: 300px;
-        height: 300px;
+        width: 290px;
+        height: 290px;
         background-color: rgba(0, 0, 0, 0.6);
     }
 }
 
 @media (min-width: 700px) {
     #box {
-        width: 340px;
-        height: 340px;
+        width: 320px;
+        height: 320px;
         background-color: rgba(0, 0, 0, 0.8);
     }
 }
 
 @media (min-width: 800px) {
     #box {
-        width: 380px;
-        height: 380px;
+        width: 350px;
+        height: 350px;
         background-color: rgba(0, 0, 0, 1);
     }
 }
