@@ -1,0 +1,74 @@
+/* 
+Use the selectors below to create the following:
+
+- #box is 200 pixels square size, black with 0.1 opacity
+- above 400px window width the box is 220px with 0.2 opacity
+- above 500px window width the box is 220px with 0.4 opacity
+- above 600px window width the box is 220px with 0.6 opacity
+- above 700px window width the box is 220px with 0.1 opacity
+- above 800px window width the box is 220px with 1 opacity
+
+Reference: 
+https: //developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
+https: //www.w3schools.com/cssref/func_rgba.php
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0,0,0,0.1);
+    transition: all 1s;
+}
+
+@media (min-width: 400px) {
+    #box {
+        width: 220px;
+        height: 220px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media (min-width: 500px) {
+    #box {
+        width: 260px;
+        height: 260px;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media (min-width: 600px) {
+    #box {
+        width: 300px;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+@media (min-width: 700px) {
+    #box {
+        width: 340px;
+        height: 340px;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+@media (min-width: 800px) {
+    #box {
+        width: 380px;
+        height: 380px;
+        background-color: rgba(0, 0, 0, 1);
+    }
+}
